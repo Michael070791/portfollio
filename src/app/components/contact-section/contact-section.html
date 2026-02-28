@@ -33,7 +33,15 @@
         </span>
         <span class="contact-card__content">
           <strong>{{ link.label }}</strong>
-          <span>{{ link.href.startsWith('mailto:') ? profile().email : link.href }}</span>
+          <span>
+            {{
+              link.href.startsWith('mailto:')
+                ? profile().email
+                : link.href.startsWith('tel:')
+                  ? profile().phone
+                  : link.href
+            }}
+          </span>
         </span>
       </a>
     }

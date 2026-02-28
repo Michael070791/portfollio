@@ -7,6 +7,19 @@
     <p class="site-rail__meta">{{ profile().role }}</p>
     <p class="site-rail__meta site-rail__meta--muted">{{ profile().organization }}</p>
 
+    <div class="site-rail__contact" aria-label="Direct contact details">
+      <div class="site-rail__meta">
+        <a class="site-rail__contact-link" [href]="'mailto:' + profile().email">
+          Email: {{ profile().email }}
+        </a>
+      </div>
+      <div class="site-rail__meta">
+        <a class="site-rail__contact-link" [href]="'tel:' + profile().phone.replaceAll(' ', '')">
+          Phone: {{ profile().phone }}
+        </a>
+      </div>
+    </div>
+
     <div class="site-rail__portrait-shell" aria-label="Profile preview">
       <div class="site-rail__ring site-rail__ring--outer"></div>
       <div class="site-rail__ring site-rail__ring--inner"></div>

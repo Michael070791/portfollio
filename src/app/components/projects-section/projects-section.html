@@ -18,6 +18,26 @@
           <h3>{{ project.title }}</h3>
           <p class="project-card__summary">{{ project.summary }}</p>
 
+          @if (project.projectUrlHref || project.projectUrlLabel) {
+            <p class="project-card__linkline">
+              <span class="project-card__linkline-label">Project URL</span>
+
+              @if (project.projectUrlHref) {
+                <a
+                  [href]="project.projectUrlHref"
+                  [attr.rel]="linkRel(project.projectUrlHref)"
+                  [attr.target]="linkTarget(project.projectUrlHref)"
+                >
+                  {{ project.projectUrlLabel || project.projectUrlHref }}
+                </a>
+              } @else {
+                <span class="project-card__linkline-placeholder">
+                  {{ project.projectUrlLabel }}
+                </span>
+              }
+            </p>
+          }
+
           <div class="project-card__stack">
             @for (item of project.stack; track item) {
               <span class="chip chip--muted">{{ item }}</span>
@@ -60,7 +80,11 @@
             <div class="project-card__placeholder" [attr.aria-label]="project.imageAlt" role="img">
               <span class="project-card__placeholder-tag">Preview</span>
               <strong>{{ project.title }}</strong>
-              <span>{{ project.kind === 'private-case-study' ? 'Internal platform narrative' : 'Public code showcase' }}</span>
+              <span>{{
+                project.kind === 'private-case-study'
+                  ? 'Internal platform narrative'
+                  : 'Public code showcase'
+              }}</span>
             </div>
           }
         </div>

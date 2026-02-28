@@ -17,6 +17,7 @@ export const portfolioProfile: PortfolioProfile = {
     'Containerized DevOps workflows',
   ],
   email: 'am.araphat@csir.org.gh',
+  phone: '+233541319428',
   github: 'https://github.com/Michael070791',
   linkedin: 'https://www.linkedin.com/in/alhassan-michael-8ab0b8118/',
   resumeHref:
@@ -178,6 +179,52 @@ export const portfolioProfile: PortfolioProfile = {
   ],
   projects: [
     {
+      title: 'AfriAddress',
+      kind: 'private-case-study',
+      summary:
+        'AfriAddress is a full-stack address and mapping platform focused on African localisation, combining geospatial search, Plus Codes, offline-first workflows, multilingual support, secure authentication, and community-driven address verification in a scalable Docker-based architecture.',
+      highlights: [
+        'Built the platform with .NET 8, Angular 17, PostgreSQL/PostGIS, Docker, and OSRM to support address creation, verification, discovery, geocoding, and routing workflows.',
+        'Implemented Plus Code support, offline-first place submission, multilingual localisation, JWT and passkey authentication, and community verification flows for more reliable local address data.',
+        'Designed for production readiness with containerized deployment, health monitoring, Prometheus and OpenTelemetry observability, and API-ready foundations for enterprise integrations.',
+      ],
+      stack: [
+        '.NET 8',
+        'Angular 17',
+        'PostgreSQL/PostGIS',
+        'Docker',
+        'OSRM',
+      ],
+      imageSrc: 'images/Screenshot from 2026-02-27 20-57-40.png',
+      imageAlt: 'AfriAddress mobile map interface preview',
+      primaryCtaLabel: 'Discuss Project',
+      primaryCtaHref: '#contact',
+    },
+    {
+      title: 'Carelink Telehealth Platform',
+      kind: 'private-case-study',
+      summary:
+        'Built and delivered a full-stack telehealth platform using .NET 8, Next.js, PostgreSQL, Docker, and Azure, with secure clinical workflows, automated CI/CD, observability, testing, and production deployment pipelines.',
+      highlights: [
+        'Delivered end-to-end patient care workflows covering onboarding, appointments and sessions, EHR records, vitals, lab orders, prescriptions, referrals, provider analytics, wallet flows, notifications, and video consultations.',
+        'Designed the backend architecture with Minimal APIs and Carter, EF Core, PostgreSQL, JWT and Google OAuth authentication, background email services, and cloud storage integrations.',
+        'Containerized the stack with Docker Compose and added health checks, Serilog logging, Prometheus monitoring, smoke and integration tests, and CI/CD in GitHub Actions and Azure DevOps for Azure App Service deployment.',
+      ],
+      stack: [
+        '.NET 8',
+        'Next.js',
+        'PostgreSQL',
+        'Docker Compose',
+        'Azure',
+        'GitHub Actions',
+      ],
+      imageSrc: '',
+      imageAlt: 'Placeholder media for Carelink telehealth platform',
+      projectUrlLabel: 'Private deployment, link available on request',
+      primaryCtaLabel: 'Discuss Project',
+      primaryCtaHref: '#contact',
+    },
+    {
       title: 'CSIR Strategic Plan Tracking Platform',
       kind: 'private-case-study',
       summary:
@@ -222,6 +269,8 @@ export const portfolioProfile: PortfolioProfile = {
       stack: ['GitHub', '.NET', 'Cross-Platform Apps', 'Experiments'],
       imageSrc: '',
       imageAlt: 'Placeholder media for public GitHub work',
+      projectUrlHref: 'https://github.com/Michael070791',
+      projectUrlLabel: 'github.com/Michael070791',
       primaryCtaLabel: 'View GitHub',
       primaryCtaHref: 'https://github.com/Michael070791',
     },
@@ -237,6 +286,7 @@ export const portfolioProfile: PortfolioProfile = {
   ],
   socialLinks: [
     { label: 'Email', href: 'mailto:am.araphat@csir.org.gh', icon: 'email' },
+    { label: 'Phone', href: 'tel:+233541319428', icon: 'phone' },
     { label: 'GitHub', href: 'https://github.com/Michael070791', icon: 'github' },
     {
       label: 'LinkedIn',

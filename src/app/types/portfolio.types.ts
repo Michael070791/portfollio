@@ -15,7 +15,7 @@ export interface NavigationItem {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: 'email' | 'github' | 'linkedin';
+  icon: 'email' | 'github' | 'linkedin' | 'phone';
 }
 
 export interface HeroStat {
@@ -63,6 +63,8 @@ export interface ProjectCaseStudy {
   stack: string[];
   imageSrc: string;
   imageAlt: string;
+  projectUrlHref?: string;
+  projectUrlLabel?: string;
   primaryCtaLabel: string;
   primaryCtaHref: string;
   secondaryCtaLabel?: string;
@@ -86,6 +88,7 @@ export interface PortfolioProfile {
   experienceSummary: string;
   heroFocusAreas: string[];
   email: string;
+  phone: string;
   github: string;
   linkedin: string;
   resumeHref: string;

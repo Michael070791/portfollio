@@ -15,7 +15,6 @@
   display: grid;
   align-content: start;
   gap: 0.8rem;
-  block-size: calc(100vh - 2.5rem);
   padding: 1.5rem;
   border-radius: 2rem;
   background:
@@ -23,9 +22,6 @@
     linear-gradient(180deg, rgb(11 24 39 / 0.92), rgb(8 20 33 / 0.94));
   border: 1px solid var(--active-section-border, rgb(255 255 255 / 0.08));
   box-shadow: 0 1.5rem 3rem rgb(2 8 15 / 0.26);
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  scrollbar-width: thin;
   transition:
     border-color 220ms ease,
     box-shadow 220ms ease,
@@ -56,7 +52,21 @@
 
 .site-rail__meta--muted {
   color: var(--color-muted);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.site-rail__contact {
+  margin-bottom: 0.65rem;
+}
+
+.site-rail__contact .site-rail__meta {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.site-rail__contact-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .site-rail__portrait-shell {
