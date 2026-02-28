@@ -17,15 +17,6 @@
       <a class="btn btn--primary" [href]="'mailto:' + profile().email">Contact Me</a>
       <a class="btn btn--ghost" [href]="profile().resumeHref">Request Resume</a>
     </div>
-
-    <ul class="hero__stats" aria-label="Professional highlights">
-      @for (stat of profile().heroStats; track stat.label) {
-        <li class="hero__stat">
-          <strong>{{ stat.value }}</strong>
-          <span>{{ stat.label }}</span>
-        </li>
-      }
-    </ul>
   </div>
 
   <aside class="hero__panel card-surface" data-aos="fade-left">

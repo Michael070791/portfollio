@@ -25,12 +25,6 @@ export const portfolioProfile: PortfolioProfile = {
     'mailto:am.araphat@csir.org.gh?subject=Request%20for%20Resume&body=Hello%20Araphat%2C%20I%20would%20like%20to%20request%20your%20resume.',
   profileImageSrc: 'images/mike.jpeg',
   profileImageAlt: 'Portrait of Alhassan Michael Araphat',
-  heroStats: [
-    { value: '4+', label: 'Years Experience' },
-    { value: 'Cloud-Native', label: 'Delivery Mindset' },
-    { value: 'Research + Eng.', label: 'Integrated Thinking' },
-    { value: 'Full-Stack', label: 'System Delivery' },
-  ],
   experienceMetrics: [
     { value: '4+', label: 'Years Experience' },
     { value: 'CSIR-INSTI', label: 'Current Appointment' },
@@ -38,6 +32,14 @@ export const portfolioProfile: PortfolioProfile = {
     { value: 'DevOps', label: 'Engineering Operations' },
   ],
   techBadges: ['.NET', 'Azure', 'Docker', 'Kubernetes'],
+  researchInterests: [
+    'Intelligent Cyber-Physical Systems',
+    'Secure Distributed and Cloud-Native Architectures',
+    'AI-Augmented Software Engineering and Governance',
+    'Real-Time Communication Systems',
+    'Embedded and Edge Computing',
+    'Industrial and Environmental AI Applications',
+  ],
   experience: [
     {
       organization: 'Council for Scientific and Industrial Research (CSIR), Ghana',
@@ -135,7 +137,6 @@ export const portfolioProfile: PortfolioProfile = {
       institution: 'Cherkasy State Technological University',
       degree: "Master's degree, Computer Engineering",
       period: '2017 - 2019',
-      grade: '5',
       details: [
         'Graduate study focused on computer engineering with a strong systems and implementation orientation.',
       ],
@@ -144,7 +145,6 @@ export const portfolioProfile: PortfolioProfile = {
       institution: 'Cherkasy State Technological University',
       degree: "Bachelor's degree, Computer Engineering",
       period: '2013 - 2017',
-      grade: '4.5',
       details: ['Computer Engineering, with a major in computer systems and networks.'],
     },
   ],
@@ -236,10 +236,61 @@ export const portfolioProfile: PortfolioProfile = {
         'Connected delivery, monitoring, and operational oversight into one coherent platform story.',
       ],
       stack: ['C#', '.NET APIs', 'Azure', 'Monitoring'],
-      imageSrc: '',
-      imageAlt: 'Placeholder media for CSIR strategic tracking platform',
+      imageSrc: 'images/csir-spme.png',
+      imageAlt: 'CSIR strategic plan monitoring and evaluation platform preview',
       primaryCtaLabel: 'Case Study',
       primaryCtaHref: '#contact',
+    },
+    {
+      title: 'BEST Forum Ghana Platform',
+      kind: 'public-project',
+      summary:
+        'Built the BEST Forum Ghana web platform for MEST as a full-stack public application supporting a national forum focused on environmental sustainability, scientific advancement, technological development, stakeholder engagement, and the showcasing of research and solutions.',
+      highlights: [
+        'Led major end-to-end application delivery across Next.js, a .NET API, a SQL database, and Azure cloud deployment for the live public platform.',
+        'Developed core platform capabilities that support forum visibility, stakeholder access, and the communication of BEST Forum goals around collaboration, innovation, and public engagement.',
+        'Set up automated deployment pipelines in Azure to improve release consistency, streamline delivery, and support reliable production updates.',
+      ],
+      stack: [
+        'Next.js',
+        '.NET API',
+        'SQL Database',
+        'Azure',
+        'Automated Pipelines',
+      ],
+      imageSrc: 'images/bestforum.png',
+      imageAlt: 'BEST Forum Ghana platform preview',
+      projectUrlHref: 'https://bestforum.mesti.gov.gh/',
+      projectUrlLabel: 'bestforum.mesti.gov.gh',
+      primaryCtaLabel: 'View Project',
+      primaryCtaHref: 'https://bestforum.mesti.gov.gh/',
+      secondaryCtaLabel: 'Discuss Contribution',
+      secondaryCtaHref: '#contact',
+    },
+    {
+      title: 'CICON Circular Concierge App',
+      kind: 'public-project',
+      summary:
+        'Contributed key product features to CICON, a circular concierge app that helps users manage digital wardrobes, understand garment impact, and access care, repair, rental, resale, donation, and recycling journeys through one mobile experience.',
+      highlights: [
+        'Developed vital user-facing features for a live circular fashion product focused on wardrobe management, garment lifecycle visibility, and service discovery.',
+        'Worked on workflows aligned to care labels, material composition, price, and location so users could connect clothing items to relevant circular services more effectively.',
+        'Contributed to a product experience used alongside brand and partner integrations, including QR-led wardrobe journeys and circular concierge collaborations promoted by fashion partners.',
+      ],
+      stack: [
+        'Mobile App',
+        'Digital Wardrobe',
+        'Circular Fashion',
+        'Partner Integrations',
+      ],
+      imageSrc: 'images/cicon.webp',
+      imageAlt: 'CICON circular concierge mobile app preview',
+      projectUrlHref: 'https://www.cicon.app/',
+      projectUrlLabel: 'cicon.app',
+      primaryCtaLabel: 'View Project',
+      primaryCtaHref: 'https://www.cicon.app/',
+      secondaryCtaLabel: 'Discuss Contribution',
+      secondaryCtaHref: '#contact',
     },
     {
       title: 'Cloud-Native Delivery and Operations',
@@ -278,21 +329,37 @@ export const portfolioProfile: PortfolioProfile = {
   ],
   publications: [
     {
-      title: 'Publication details coming soon',
-      status: 'Placeholder',
+      title: 'EFFECTIVENESS OF IMPLEMENTING MPLS VPN COMPUTER NETWORK FOR "BUSYINTERNET" ISP (GHANA)',
+      status: "Master's Thesis",
       description:
-        'This section is reserved for journal papers, conference publications, and other research outputs once the full citation details are ready.',
-      tags: ['Research Outputs', 'Journal Papers', 'Conference Papers'],
+        'Master\'s thesis examining the implementation effectiveness of an MPLS VPN computer network for BusyInternet ISP in Ghana, with emphasis on network design, performance, and operational reliability.',
+      tags: ['MPLS VPN', 'Computer Networks', 'ISP Infrastructure', "Master's Thesis"],
+    },
+    {
+      title:
+        'Topic modelling of the "fix the country" protest in Ghana using the Latent Dirichlet Allocation (LDA) and Jaccard Similarity approach',
+      status: 'Published Article | JASIT 2024',
+      description:
+        'Published in the Journal of Applied Science and Information Technology (Vol. 1, No. 1, 2024), applying LDA and Jaccard Similarity to analyse discourse around the Fix the Country protest in Ghana.',
+      tags: ['LDA', 'Jaccard Similarity', 'Topic Modelling', 'Social Media Analysis'],
+      urlHref: 'https://csirjasit.org/index.php/journal/article/view/5',
+      urlLabel: 'csirjasit.org article',
     },
   ],
   socialLinks: [
     { label: 'Email', href: 'mailto:am.araphat@csir.org.gh', icon: 'email' },
     { label: 'Phone', href: 'tel:+233541319428', icon: 'phone' },
-    { label: 'GitHub', href: 'https://github.com/Michael070791', icon: 'github' },
+    {
+      label: 'GitHub',
+      href: 'https://github.com/Michael070791',
+      icon: 'github',
+      displayText: 'Michael070791',
+    },
     {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/alhassan-michael-8ab0b8118/',
       icon: 'linkedin',
+      displayText: 'Alhassan Michael Profile',
     },
   ],
 };

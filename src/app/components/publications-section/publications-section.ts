@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { PublicationEntry } from '../../types/portfolio.types';
+import { getLinkRel, getLinkTarget } from '../../utils/link.utils';
 
 @Component({
   selector: 'app-publications-section',
@@ -9,4 +10,7 @@ import { PublicationEntry } from '../../types/portfolio.types';
 })
 export class PublicationsSectionComponent {
   readonly items = input.required<PublicationEntry[]>();
+  readonly researchInterests = input.required<string[]>();
+  protected readonly linkRel = getLinkRel;
+  protected readonly linkTarget = getLinkTarget;
 }

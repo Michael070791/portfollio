@@ -1,7 +1,6 @@
 <div class="shell">
   <div class="section-heading" data-aos="fade-up">
     <p class="section-tag">Projects</p>
-    <h2>Case studies that connect engineering quality with delivery outcomes.</h2>
     <p>
       A mix of institutional platforms, cloud-native delivery work, and public code presence that
       shows how I translate technical strategy into reliable execution.
@@ -13,7 +12,13 @@
       <article class="project-card" [class.project-card--reverse]="isOdd">
         <div class="project-card__content card-surface" data-aos="fade-up">
           <p class="project-card__eyebrow">
-            {{ project.kind === 'private-case-study' ? 'Private case study' : 'Public profile' }}
+            {{
+              project.kind === 'private-case-study'
+                ? 'Private case study'
+                : project.kind === 'public-project'
+                  ? 'Public project'
+                  : 'Public profile'
+            }}
           </p>
           <h3>{{ project.title }}</h3>
           <p class="project-card__summary">{{ project.summary }}</p>
@@ -83,7 +88,9 @@
               <span>{{
                 project.kind === 'private-case-study'
                   ? 'Internal platform narrative'
-                  : 'Public code showcase'
+                  : project.kind === 'public-project'
+                    ? 'Live product preview'
+                    : 'Public code showcase'
               }}</span>
             </div>
           }

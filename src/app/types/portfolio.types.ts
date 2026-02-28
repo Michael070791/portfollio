@@ -16,6 +16,7 @@ export interface SocialLink {
   label: string;
   href: string;
   icon: 'email' | 'github' | 'linkedin' | 'phone';
+  displayText?: string;
 }
 
 export interface HeroStat {
@@ -46,7 +47,6 @@ export interface EducationEntry {
   institution: string;
   degree: string;
   period: string;
-  grade: string;
   details: string[];
 }
 
@@ -57,7 +57,7 @@ export interface SkillGroup {
 
 export interface ProjectCaseStudy {
   title: string;
-  kind: 'private-case-study' | 'public-profile';
+  kind: 'private-case-study' | 'public-project' | 'public-profile';
   summary: string;
   highlights: string[];
   stack: string[];
@@ -76,6 +76,8 @@ export interface PublicationEntry {
   status: string;
   description: string;
   tags: string[];
+  urlHref?: string;
+  urlLabel?: string;
 }
 
 export interface PortfolioProfile {
@@ -95,9 +97,9 @@ export interface PortfolioProfile {
   resumeHref: string;
   profileImageSrc: string;
   profileImageAlt: string;
-  heroStats: HeroStat[];
   experienceMetrics: HeroStat[];
   techBadges: string[];
+  researchInterests: string[];
   experience: ExperienceEntry[];
   education: EducationEntry[];
   skillGroups: SkillGroup[];

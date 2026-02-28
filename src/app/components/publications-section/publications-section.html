@@ -1,11 +1,14 @@
 <div class="shell">
   <div class="section-heading" data-aos="fade-up">
     <p class="section-tag">Publications</p>
-    <h2>Research and publication work will be surfaced here.</h2>
-    <p>
-      This section is prepared for your papers, conference articles, and technical publications.
-      Once you share the details, they can be dropped in without changing the layout.
-    </p>
+    <div class="publications-intro card-surface">
+      <p class="publications-intro__label">Research Interests</p>
+      <div class="publications-intro__chips">
+        @for (interest of researchInterests(); track interest) {
+          <span class="chip chip--muted">{{ interest }}</span>
+        }
+      </div>
+    </div>
   </div>
 
   <div class="publications-list">
@@ -19,6 +22,24 @@
         </div>
 
         <p class="publication-card__description">{{ item.description }}</p>
+
+        @if (item.urlHref || item.urlLabel) {
+          <p class="publication-card__linkline">
+            <span class="publication-card__linkline-label">Publication URL</span>
+
+            @if (item.urlHref) {
+              <a
+                [href]="item.urlHref"
+                [attr.rel]="linkRel(item.urlHref)"
+                [attr.target]="linkTarget(item.urlHref)"
+              >
+                {{ item.urlLabel || item.urlHref }}
+              </a>
+            } @else {
+              <span>{{ item.urlLabel }}</span>
+            }
+          </p>
+        }
 
         <div class="publication-card__tags">
           @for (tag of item.tags; track tag) {

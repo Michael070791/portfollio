@@ -63,7 +63,10 @@
         data-section="publications"
         [class.page-section--active]="activeSection() === 'publications'"
       >
-        <app-publications-section [items]="profile.publications" />
+        <app-publications-section
+          [items]="profile.publications"
+          [researchInterests]="profile.researchInterests"
+        />
       </section>
 
       <section

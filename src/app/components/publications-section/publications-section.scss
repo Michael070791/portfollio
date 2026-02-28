@@ -6,6 +6,26 @@
   display: grid;
 }
 
+.publications-intro {
+  margin: 0 0 1.2rem;
+  padding: 1rem 1.1rem;
+}
+
+.publications-intro__label {
+  margin: 0 0 0.75rem;
+  color: var(--color-accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.publications-intro__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
 .publication-card {
   padding: clamp(1.5rem, 3vw, 2rem);
   background:
@@ -34,9 +54,37 @@ h3 {
   color: var(--color-muted);
 }
 
+.publication-card__linkline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  align-items: center;
+  margin: 0.95rem 0 0;
+  color: var(--color-muted);
+}
+
+.publication-card__linkline-label {
+  color: var(--color-text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.publication-card__linkline a {
+  color: var(--color-accent);
+  overflow-wrap: anywhere;
+}
+
 .publication-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
   margin-top: 1.2rem;
+}
+
+@media (max-width: 560px) {
+  .publications-intro {
+    padding: 0.95rem 1rem;
+  }
 }

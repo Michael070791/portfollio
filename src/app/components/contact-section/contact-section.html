@@ -35,7 +35,9 @@
           <strong>{{ link.label }}</strong>
           <span>
             {{
-              link.href.startsWith('mailto:')
+              link.displayText
+                ? link.displayText
+                : link.href.startsWith('mailto:')
                 ? profile().email
                 : link.href.startsWith('tel:')
                   ? profile().phone
