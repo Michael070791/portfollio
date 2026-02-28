@@ -4,8 +4,12 @@
       {{ profile().displayName }}
     </a>
 
-    <p class="site-rail__meta">{{ profile().role }}</p>
-    <p class="site-rail__meta site-rail__meta--muted">{{ profile().organization }}</p>
+    <p class="site-rail__meta site-rail__meta--muted site-rail__meta--summary">
+      <span>{{ profile().role }}, {{ profile().organization }}</span>
+      @if (profile().secondaryRole) {
+        <span class="site-rail__meta-break">{{ profile().secondaryRole }}</span>
+      }
+    </p>
 
     <div class="site-rail__contact" aria-label="Direct contact details">
       <div class="site-rail__meta">

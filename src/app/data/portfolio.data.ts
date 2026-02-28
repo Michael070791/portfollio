@@ -4,6 +4,7 @@ export const portfolioProfile: PortfolioProfile = {
   displayName: 'Alhassan Michael Araphat (MSc.)',
   role: 'Assistant Research Scientist',
   organization: 'CSIR-INSTI',
+  secondaryRole: 'CEO, Kodynex Solutions',
   heroEyebrow: 'Assistant Research Scientist at CSIR-INSTI',
   headline: 'Software Engineer Designing Research-Driven, Cloud-Native Systems',
   summary:
@@ -218,8 +219,8 @@ export const portfolioProfile: PortfolioProfile = {
         'Azure',
         'GitHub Actions',
       ],
-      imageSrc: '',
-      imageAlt: 'Placeholder media for Carelink telehealth platform',
+      imageSrc: 'images/carelink.png',
+      imageAlt: 'Carelink telehealth platform preview',
       projectUrlLabel: 'Private deployment, link available on request',
       primaryCtaLabel: 'Discuss Project',
       primaryCtaHref: '#contact',

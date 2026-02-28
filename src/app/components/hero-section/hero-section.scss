@@ -141,14 +141,43 @@
     grid-template-columns: 1fr;
   }
 
+  .hero__panel {
+    max-inline-size: 40rem;
+  }
+
   .hero__stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
+  .hero__headline {
+    max-inline-size: 9ch;
+    min-block-size: auto;
+  }
+
+  .hero__summary {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    margin-block: 1.6rem 1.85rem;
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 100%;
+  }
+
   .hero__stats {
     grid-template-columns: 1fr;
+  }
+
+  .hero__stat {
+    padding: 0.95rem 1rem;
+  }
+
+  .hero__panel {
+    padding: 1.3rem;
   }
 }
 

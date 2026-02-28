@@ -168,8 +168,27 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .experience-entry {
+    padding: 1.2rem;
+  }
+
+  .experience-entry::before {
+    display: none;
+  }
+
   .experience-entry__header {
     flex-direction: column;
+    padding-inline-start: 0;
+  }
+
+  .experience-entry__summary,
+  .experience-entry__roles,
+  .experience-entry__skills {
+    padding-inline-start: 0;
+  }
+
+  .experience-entry__highlights {
+    padding: 0 0 0 1.2rem;
   }
 
   .experience-entry__period,
@@ -179,5 +198,9 @@ h3 {
 
   .experience-role__header {
     flex-direction: column;
+  }
+
+  .experience-role {
+    padding: 0.9rem;
   }
 }

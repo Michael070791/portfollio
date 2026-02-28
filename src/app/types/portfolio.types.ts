@@ -82,6 +82,7 @@ export interface PortfolioProfile {
   displayName: string;
   role: string;
   organization: string;
+  secondaryRole?: string;
   heroEyebrow: string;
   headline: string;
   summary: string;

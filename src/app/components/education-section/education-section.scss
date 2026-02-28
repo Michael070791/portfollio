@@ -68,7 +68,15 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .education-card {
+    padding: 1.2rem;
+  }
+
   .education-card__top {
     flex-direction: column;
+  }
+
+  .education-card__period {
+    align-self: flex-start;
   }
 }

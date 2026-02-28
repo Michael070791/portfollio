@@ -109,7 +109,9 @@ h3 {
 
 .project-card__media {
   display: grid;
-  min-block-size: 19rem;
+  min-block-size: 0;
+  align-self: start;
+  aspect-ratio: 6 / 5;
 }
 
 .project-card__image {
@@ -117,6 +119,7 @@ h3 {
   block-size: 100%;
   border-radius: 1.4rem;
   object-fit: cover;
+  object-position: center top;
 }
 
 .project-card__placeholder {
@@ -161,8 +164,32 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .project-card__media {
+    aspect-ratio: 16 / 10;
+  }
+
   .project-card--reverse .project-card__content,
   .project-card--reverse .project-card__media {
     order: initial;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-card__content,
+  .project-card__media {
+    padding: 1.2rem;
+  }
+
+  .project-card__linkline {
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .project-card__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .project-card__media {
+    aspect-ratio: 4 / 3;
   }
 }
