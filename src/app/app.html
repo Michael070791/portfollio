@@ -1,0 +1,81 @@
+<div class="app-shell" [attr.data-active-section]="activeSection()">
+  <app-header
+    [profile]="profile"
+    [navItems]="navItems"
+    [activeSection]="activeSection()"
+    [isScrolled]="isHeaderScrolled()"
+  />
+
+  <div class="portfolio-content">
+    <main class="portfolio-main">
+      <section
+        id="home"
+        class="page-section page-section--hero"
+        data-section="home"
+        [class.page-section--active]="activeSection() === 'home'"
+      >
+        <app-hero-section [profile]="profile" />
+      </section>
+
+      <section
+        id="experience"
+        class="page-section"
+        data-section="experience"
+        [class.page-section--active]="activeSection() === 'experience'"
+      >
+        <app-experience-section
+          [summary]="profile.experienceSummary"
+          [metrics]="profile.experienceMetrics"
+          [items]="profile.experience"
+        />
+      </section>
+
+      <section
+        id="education"
+        class="page-section"
+        data-section="education"
+        [class.page-section--active]="activeSection() === 'education'"
+      >
+        <app-education-section [items]="profile.education" />
+      </section>
+
+      <section
+        id="skills"
+        class="page-section"
+        data-section="skills"
+        [class.page-section--active]="activeSection() === 'skills'"
+      >
+        <app-skills-section [skillGroups]="profile.skillGroups" />
+      </section>
+
+      <section
+        id="projects"
+        class="page-section"
+        data-section="projects"
+        [class.page-section--active]="activeSection() === 'projects'"
+      >
+        <app-projects-section [projects]="profile.projects" />
+      </section>
+
+      <section
+        id="publications"
+        class="page-section"
+        data-section="publications"
+        [class.page-section--active]="activeSection() === 'publications'"
+      >
+        <app-publications-section [items]="profile.publications" />
+      </section>
+
+      <section
+        id="contact"
+        class="page-section"
+        data-section="contact"
+        [class.page-section--active]="activeSection() === 'contact'"
+      >
+        <app-contact-section [profile]="profile" />
+      </section>
+    </main>
+
+    <app-footer [profile]="profile" />
+  </div>
+</div>

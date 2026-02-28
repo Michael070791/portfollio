@@ -1,0 +1,44 @@
+<aside class="site-rail" [class.site-rail--scrolled]="isScrolled()">
+  <div class="site-rail__sticky">
+    <a class="site-rail__brand" href="#home" aria-label="Go to home section">
+      {{ profile().displayName }}
+    </a>
+
+    <p class="site-rail__meta">{{ profile().role }}</p>
+    <p class="site-rail__meta site-rail__meta--muted">{{ profile().organization }}</p>
+
+    <div class="site-rail__portrait-shell" aria-label="Profile preview">
+      <div class="site-rail__ring site-rail__ring--outer"></div>
+      <div class="site-rail__ring site-rail__ring--inner"></div>
+
+      @if (profile().profileImageSrc) {
+        <figure class="site-rail__portrait">
+          <img
+            class="site-rail__portrait-image"
+            [src]="profile().profileImageSrc"
+            [alt]="profile().profileImageAlt"
+          />
+        </figure>
+      } @else {
+        <div class="site-rail__portrait site-rail__portrait--placeholder">
+          <span class="site-rail__monogram">{{ initials() }}</span>
+          <span class="site-rail__portrait-label">Image placeholder</span>
+        </div>
+      }
+    </div>
+
+    <nav class="site-rail__nav" aria-label="Primary navigation">
+      @for (item of navItems(); track item.id; let index = $index) {
+        <a
+          class="site-rail__link"
+          [class.site-rail__link--active]="activeSection() === item.id"
+          [attr.data-section]="item.id"
+          [href]="'#' + item.id"
+        >
+          <span class="site-rail__link-index">{{ index + 1 < 10 ? '0' + (index + 1) : index + 1 }}</span>
+          <span class="site-rail__link-label">{{ item.label }}</span>
+        </a>
+      }
+    </nav>
+  </div>
+</aside>

@@ -1,0 +1,41 @@
+<div class="shell contact-shell">
+  <div class="contact-shell__intro" data-aos="fade-right">
+    <p class="section-tag">Contact</p>
+    <h2>Let's build something reliable and meaningful.</h2>
+    <p>
+      I'm open to conversations around research-informed product engineering, cloud-native
+      application delivery, platform work, and software roles where quality and impact both matter.
+    </p>
+
+    <div class="contact-shell__actions">
+      <a class="btn btn--primary" [href]="'mailto:' + profile().email">Email Me</a>
+      <a
+        class="btn btn--ghost"
+        [href]="profile().linkedin"
+        [attr.rel]="linkRel(profile().linkedin)"
+        [attr.target]="linkTarget(profile().linkedin)"
+      >
+        Connect on LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-shell__cards" data-aos="fade-left">
+    @for (link of profile().socialLinks; track link.label) {
+      <a
+        class="contact-card card-surface"
+        [href]="link.href"
+        [attr.rel]="linkRel(link.href)"
+        [attr.target]="linkTarget(link.href)"
+      >
+        <span class="contact-card__icon">
+          <app-social-icon [name]="link.icon" />
+        </span>
+        <span class="contact-card__content">
+          <strong>{{ link.label }}</strong>
+          <span>{{ link.href.startsWith('mailto:') ? profile().email : link.href }}</span>
+        </span>
+      </a>
+    }
+  </div>
+</div>

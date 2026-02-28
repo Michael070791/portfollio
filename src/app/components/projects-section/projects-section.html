@@ -1,0 +1,70 @@
+<div class="shell">
+  <div class="section-heading" data-aos="fade-up">
+    <p class="section-tag">Projects</p>
+    <h2>Case studies that connect engineering quality with delivery outcomes.</h2>
+    <p>
+      A mix of institutional platforms, cloud-native delivery work, and public code presence that
+      shows how I translate technical strategy into reliable execution.
+    </p>
+  </div>
+
+  <div class="projects-list">
+    @for (project of projects(); track project.title; let isOdd = $odd) {
+      <article class="project-card" [class.project-card--reverse]="isOdd">
+        <div class="project-card__content card-surface" data-aos="fade-up">
+          <p class="project-card__eyebrow">
+            {{ project.kind === 'private-case-study' ? 'Private case study' : 'Public profile' }}
+          </p>
+          <h3>{{ project.title }}</h3>
+          <p class="project-card__summary">{{ project.summary }}</p>
+
+          <div class="project-card__stack">
+            @for (item of project.stack; track item) {
+              <span class="chip chip--muted">{{ item }}</span>
+            }
+          </div>
+
+          <ul class="project-card__highlights">
+            @for (highlight of project.highlights; track highlight) {
+              <li>{{ highlight }}</li>
+            }
+          </ul>
+
+          <div class="project-card__actions">
+            <a
+              class="btn btn--primary"
+              [href]="project.primaryCtaHref"
+              [attr.rel]="linkRel(project.primaryCtaHref)"
+              [attr.target]="linkTarget(project.primaryCtaHref)"
+            >
+              {{ project.primaryCtaLabel }}
+            </a>
+
+            @if (project.secondaryCtaLabel && project.secondaryCtaHref) {
+              <a
+                class="btn btn--ghost"
+                [href]="project.secondaryCtaHref"
+                [attr.rel]="linkRel(project.secondaryCtaHref)"
+                [attr.target]="linkTarget(project.secondaryCtaHref)"
+              >
+                {{ project.secondaryCtaLabel }}
+              </a>
+            }
+          </div>
+        </div>
+
+        <div class="project-card__media card-surface" data-aos="fade-up">
+          @if (project.imageSrc) {
+            <img class="project-card__image" [src]="project.imageSrc" [alt]="project.imageAlt" />
+          } @else {
+            <div class="project-card__placeholder" [attr.aria-label]="project.imageAlt" role="img">
+              <span class="project-card__placeholder-tag">Preview</span>
+              <strong>{{ project.title }}</strong>
+              <span>{{ project.kind === 'private-case-study' ? 'Internal platform narrative' : 'Public code showcase' }}</span>
+            </div>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="shell">
+  <div class="section-heading" data-aos="fade-up">
+    <p class="section-tag">Experience</p>
+    <h2>Engineering dependable platforms with measurable impact.</h2>
+    <p>{{ summary() }}</p>
+  </div>
+
+  <div class="experience__metrics">
+    @for (metric of metrics(); track metric.label) {
+      <article class="experience__metric card-surface" data-aos="fade-up">
+        <strong>{{ metric.value }}</strong>
+        <span>{{ metric.label }}</span>
+      </article>
+    }
+  </div>
+
+  <div class="experience__timeline">
+    @for (item of items(); track item.organization + item.duration) {
+      <article class="experience-entry card-surface" data-aos="fade-up">
+        <div class="experience-entry__header">
+          <div>
+            <p class="experience-entry__eyebrow">{{ item.organization }}</p>
+            <h3>
+              @if (item.employmentType) {
+                {{ item.employmentType }} | {{ item.duration }}
+              } @else {
+                {{ item.duration }}
+              }
+            </h3>
+          </div>
+          <span class="experience-entry__period">{{ item.location }}</span>
+        </div>
+
+        @if (item.summary) {
+          <p class="experience-entry__summary">{{ item.summary }}</p>
+        }
+
+        <div class="experience-entry__roles">
+          @for (role of item.roles; track role.title + role.period) {
+            <section class="experience-role">
+              <div class="experience-role__header">
+                <h4>{{ role.title }}</h4>
+                <span class="experience-role__period">{{ role.period }}</span>
+              </div>
+
+              @if (role.duration) {
+                <p class="experience-role__duration">{{ role.duration }}</p>
+              }
+
+              @if (role.summary) {
+                <p class="experience-role__summary">{{ role.summary }}</p>
+              }
+
+              @if (role.highlights?.length) {
+                <ul class="experience-role__highlights">
+                  @for (highlight of role.highlights; track highlight) {
+                    <li>{{ highlight }}</li>
+                  }
+                </ul>
+              }
+            </section>
+          }
+        </div>
+
+        @if (item.highlights?.length) {
+          <ul class="experience-entry__highlights">
+            @for (highlight of item.highlights; track highlight) {
+              <li>{{ highlight }}</li>
+            }
+          </ul>
+        }
+
+        @if (item.skills?.length) {
+          <div class="experience-entry__skills">
+            @for (skill of item.skills; track skill) {
+              <span class="chip chip--muted">{{ skill }}</span>
+            }
+          </div>
+        }
+      </article>
+    }
+  </div>
+</div>

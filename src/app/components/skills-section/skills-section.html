@@ -1,0 +1,29 @@
+<div class="shell">
+  <div class="section-heading" data-aos="fade-up">
+    <p class="section-tag">Skills</p>
+    <h2>Technical range across product delivery, cloud, and operations.</h2>
+    <p>
+      My toolkit spans application engineering, cross-platform delivery, cloud services, and
+      DevOps practices that support scalable, production-ready systems.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+    @for (group of skillGroups(); track group.title) {
+      <article class="skills-card card-surface" data-aos="fade-up">
+        <h3>{{ group.title }}</h3>
+
+        <div class="skills-card__chips">
+          @for (item of group.items; track item) {
+            <span class="skills-card__item">
+              <span class="skills-card__icon">
+                <app-skill-icon [label]="item" />
+              </span>
+              <span>{{ item }}</span>
+            </span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</div>

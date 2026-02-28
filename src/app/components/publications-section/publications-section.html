@@ -1,0 +1,31 @@
+<div class="shell">
+  <div class="section-heading" data-aos="fade-up">
+    <p class="section-tag">Publications</p>
+    <h2>Research and publication work will be surfaced here.</h2>
+    <p>
+      This section is prepared for your papers, conference articles, and technical publications.
+      Once you share the details, they can be dropped in without changing the layout.
+    </p>
+  </div>
+
+  <div class="publications-list">
+    @for (item of items(); track item.title) {
+      <article class="publication-card card-surface" data-aos="fade-up">
+        <div class="publication-card__header">
+          <div>
+            <p class="publication-card__status">{{ item.status }}</p>
+            <h3>{{ item.title }}</h3>
+          </div>
+        </div>
+
+        <p class="publication-card__description">{{ item.description }}</p>
+
+        <div class="publication-card__tags">
+          @for (tag of item.tags; track tag) {
+            <span class="chip chip--muted">{{ tag }}</span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</div>

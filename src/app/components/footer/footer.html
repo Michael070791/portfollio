@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <div>
+      <p class="site-footer__name">{{ profile().displayName }}</p>
+      <p class="site-footer__role">{{ profile().role }} | {{ profile().organization }}</p>
+    </div>
+
+    <p class="site-footer__copy">Built with Angular and a focus on clean engineering.</p>
+
+    <div class="site-footer__links">
+      @for (link of profile().socialLinks; track link.label) {
+        <a
+          class="site-footer__link"
+          [href]="link.href"
+          [attr.rel]="linkRel(link.href)"
+          [attr.target]="linkTarget(link.href)"
+          [attr.aria-label]="link.label"
+        >
+          <app-social-icon [name]="link.icon" />
+        </a>
+      }
+    </div>
+  </div>
+</footer>

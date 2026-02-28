@@ -1,0 +1,41 @@
+<div class="shell hero">
+  <div class="hero__content" data-aos="fade-right">
+    <p class="section-tag">{{ profile().heroEyebrow }}</p>
+    <h1 class="hero__headline" [attr.aria-label]="profile().headline">
+      <span class="hero__typed-text">{{ typedHeadline() }}</span>
+      <span class="hero__cursor" aria-hidden="true"></span>
+    </h1>
+    <p class="hero__summary">{{ profile().summary }}</p>
+
+    <div class="hero__chips" aria-label="Primary strengths">
+      @for (badge of profile().techBadges; track badge) {
+        <span class="chip chip--muted">{{ badge }}</span>
+      }
+    </div>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary" [href]="'mailto:' + profile().email">Contact Me</a>
+      <a class="btn btn--ghost" [href]="profile().resumeHref">Request Resume</a>
+    </div>
+
+    <ul class="hero__stats" aria-label="Professional highlights">
+      @for (stat of profile().heroStats; track stat.label) {
+        <li class="hero__stat">
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+
+  <aside class="hero__panel card-surface" data-aos="fade-left">
+    <p class="hero__panel-tag">What I bring</p>
+    <h2>Architecture, delivery, and operations working as one system.</h2>
+
+    <ul class="hero__panel-list">
+      @for (item of profile().heroFocusAreas; track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  </aside>
+</div>
