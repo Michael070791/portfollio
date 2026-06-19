@@ -73,7 +73,7 @@ export const portfolioProfile: PortfolioProfile = {
       duration: '3 mos',
       location: 'Frankfurt, Germany | Remote',
       summary:
-        'Process consulting support for candidates and prospective clients interested in working with Talents2Germany and relocating to Germany for work.',
+        'Supported candidates and clients interested in working with Talents2Germany and pursuing employment opportunities in Germany.',
       roles: [
         {
           title: 'Process Consultant',
@@ -82,10 +82,10 @@ export const portfolioProfile: PortfolioProfile = {
         },
       ],
       highlights: [
-        'Reviewed candidate resumes and assessed applicant fit for the Talents2Germany process.',
-        'Interviewed prospective clients and guided them through the full application and relocation workflow.',
-        'Managed LinkedIn page activity, posted refined candidate portfolios, and generated leads.',
-        'Scheduled and hosted virtual meetings with candidates and clients throughout the process.',
+        'Reviewed resumes, refined candidate profiles, and assessed applicant fit for the Talents2Germany process.',
+        'Interviewed interested candidates and clients, then guided qualified applicants through the work-in-Germany pathway.',
+        'Managed the company LinkedIn page, published polished candidate portfolio posts, and generated new leads.',
+        'Scheduled and hosted virtual meetings while tracking candidate progress through the process.',
       ],
       skills: ['Resume Review', 'Client Interviews', 'Lead Generation', 'LinkedIn Management'],
     },
