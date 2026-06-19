@@ -72,6 +72,8 @@ export const portfolioProfile: PortfolioProfile = {
       employmentType: 'Contract',
       duration: '3 mos',
       location: 'Frankfurt, Germany | Remote',
+      summary:
+        'Process consulting support for candidates and prospective clients interested in working with Talents2Germany and relocating to Germany for work.',
       roles: [
         {
           title: 'Process Consultant',
@@ -79,6 +81,13 @@ export const portfolioProfile: PortfolioProfile = {
           duration: '3 mos',
         },
       ],
+      highlights: [
+        'Reviewed candidate resumes and assessed applicant fit for the Talents2Germany process.',
+        'Interviewed prospective clients and guided them through the full application and relocation workflow.',
+        'Managed LinkedIn page activity, posted refined candidate portfolios, and generated leads.',
+        'Scheduled and hosted virtual meetings with candidates and clients throughout the process.',
+      ],
+      skills: ['Resume Review', 'Client Interviews', 'Lead Generation', 'LinkedIn Management'],
     },
     {
       organization: 'CICON.App',
