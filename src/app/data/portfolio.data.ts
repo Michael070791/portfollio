@@ -6,16 +6,16 @@ export const portfolioProfile: PortfolioProfile = {
   organization: 'CSIR-INSTI',
   secondaryRole: 'CEO, Kodynex Solutions',
   heroEyebrow: 'Assistant Research Scientist at CSIR-INSTI',
-  headline: 'Software Engineer Designing Research-Driven, Cloud-Native Systems',
+  headline: 'Software Engineer Building Practical, Reliable Systems',
   summary:
-    'With 4+ years of experience, I build full-stack and cross-platform applications, scalable .NET APIs, and containerized delivery workflows that turn institutional goals into reliable software.',
+    'Software engineer with 4+ years of experience building .NET APIs, React interfaces, and cross-platform applications for research, public-sector, and product teams.',
   experienceSummary:
-    'I combine software craftsmanship, research and innovation, and DevOps-oriented delivery to build secure, resilient systems that serve real institutional needs. Self-motivated and adaptable to new technologies, I move comfortably from architecture and API design to cloud deployment, monitoring, and operational improvement.',
+    'I work across API design, web and mobile interfaces, research support, and deployment workflows. My strength is turning institutional and product goals into maintainable software that teams can use and improve.',
   heroFocusAreas: [
-    'Research-driven software delivery',
-    'Cloud-native application platforms',
-    'Scalable .NET API engineering',
-    'Containerized DevOps workflows',
+    '.NET API engineering',
+    'React and client application development',
+    'Cross-platform mobile features',
+    'Research-informed software',
   ],
   email: 'am.araphat@csir.org.gh',
   phone: '+233541319428',
@@ -28,10 +28,10 @@ export const portfolioProfile: PortfolioProfile = {
   experienceMetrics: [
     { value: '4+', label: 'Years Experience' },
     { value: 'CSIR-INSTI', label: 'Current Appointment' },
-    { value: 'Docker + K8s', label: 'Cloud-Native Delivery' },
-    { value: 'DevOps', label: 'Engineering Operations' },
+    { value: '.NET + React', label: 'Core Stack' },
+    { value: 'Mobile', label: 'Cross-Platform Work' },
   ],
-  techBadges: ['.NET', 'Azure', 'Docker', 'Kubernetes'],
+  techBadges: ['.NET', 'React', 'Azure', 'Docker'],
   researchInterests: [
     'Intelligent Cyber-Physical Systems',
     'Secure Distributed and Cloud-Native Architectures',
@@ -46,8 +46,7 @@ export const portfolioProfile: PortfolioProfile = {
       employmentType: 'Full-time',
       duration: '3 yrs 5 mos',
       location: 'Accra, Greater Accra Region, Ghana',
-      summary:
-        'Research, software delivery, and project coordination across institutional digital initiatives at CSIR-INSTI.',
+      summary: 'Software development, research support, and project coordination for CSIR-INSTI digital initiatives.',
       roles: [
         {
           title: 'Assistant Research Scientist',
@@ -58,14 +57,13 @@ export const portfolioProfile: PortfolioProfile = {
           title: 'Principal Technologist',
           period: 'Oct 2022 - Nov 2023',
           duration: '1 yr 2 mos',
-          summary:
-            'Wrote research proposals, oversaw the development and management of software applications, and coordinated projects across the organization.',
+          summary: 'Prepared research proposals, managed software work, and coordinated digital projects across the institute.',
         },
       ],
       highlights: [
-        "Led the development of a centralized platform for tracking CSIR-Ghana's 5-year strategic plan.",
-        'Oversaw application architecture, API delivery, cloud deployment, and operational monitoring.',
-        'Supported software management, research-driven planning, and project coordination inside the institute.',
+        "Developed a centralized platform for tracking CSIR-Ghana's 5-year strategic plan.",
+        'Built API and web application workflows for structured institutional reporting.',
+        'Supported research planning, software management, and project coordination.',
       ],
       skills: ['C#', 'HTML5', 'Research Proposals', 'Project Coordination'],
     },
@@ -95,9 +93,9 @@ export const portfolioProfile: PortfolioProfile = {
         },
       ],
       highlights: [
-        'Developed features for a cross-platform mobile application as part of a delivery team.',
-        "Reviewed teammates' code and refactored modules for performance improvements.",
-        'Handled error tracing, debugging, and bug fixes to improve product stability.',
+        'Developed user-facing features for a cross-platform mobile application.',
+        "Reviewed teammates' code and refactored modules to improve maintainability.",
+        'Resolved critical bugs and improved product stability.',
       ],
       skills: ['Firebase', 'Bitbucket', 'Cross-Platform Mobile', 'Code Review'],
     },
@@ -126,8 +124,8 @@ export const portfolioProfile: PortfolioProfile = {
         },
       ],
       highlights: [
-        'Collaborated on the development of web and desktop applications with a skilled engineering team.',
-        "Reviewed team code, resolved defects, and handled bug fixes to improve software quality.",
+        'Built web and desktop application features with an engineering team.',
+        'Reviewed code, resolved defects, and improved software quality.',
       ],
       skills: ['C#', 'Web Development', 'Desktop Applications'],
     },
@@ -135,23 +133,21 @@ export const portfolioProfile: PortfolioProfile = {
   education: [
     {
       institution: 'Cherkasy State Technological University',
-      degree: "Master's degree, Computer Engineering",
+      degree: 'MSc. Computer Engineering, Major in Computer Systems and Networks',
       period: '2017 - 2019',
-      details: [
-        'Graduate study focused on computer engineering with a strong systems and implementation orientation.',
-      ],
+      details: ['Graduate study in computer systems, networks, and applied engineering.'],
     },
     {
       institution: 'Cherkasy State Technological University',
-      degree: "Bachelor's degree, Computer Engineering",
+      degree: 'BSc. Computer Engineering, Major in Computer Systems and Networks',
       period: '2013 - 2017',
-      details: ['Computer Engineering, with a major in computer systems and networks.'],
+      details: ['Undergraduate foundation in computer engineering and networked systems.'],
     },
   ],
   skillGroups: [
     {
       title: 'Frontend & Client',
-      items: ['React', 'Next.js', 'CodeIgniter', 'Xamarin Forms', '.NET MAUI'],
+      items: ['React', 'Next.js', 'Angular', 'Xamarin Forms', '.NET MAUI'],
     },
     {
       title: 'Backend',
@@ -166,8 +162,8 @@ export const portfolioProfile: PortfolioProfile = {
       items: ['Azure App Services', 'Azure VMs', 'Azure Container Services', 'Vercel'],
     },
     {
-      title: 'DevOps & Cloud-Native',
-      items: ['Docker', 'Kubernetes', 'Azure DevOps CI/CD', 'Containerized Delivery'],
+      title: 'DevOps & Release',
+      items: ['Docker', 'Kubernetes', 'Azure DevOps CI/CD', 'Containerized Deployment'],
     },
     {
       title: 'Infrastructure & Delivery',
@@ -175,7 +171,7 @@ export const portfolioProfile: PortfolioProfile = {
     },
     {
       title: 'Workflow',
-      items: ['Linux', 'Omarchy', 'CachyOS', 'Software Craftsmanship', 'Adaptable to New Technologies'],
+      items: ['Linux', 'Software Craftsmanship', 'Code Review', 'Research Writing', 'Adaptable to New Technologies'],
     },
   ],
   projects: [
@@ -183,11 +179,11 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'AfriAddress',
       kind: 'private-case-study',
       summary:
-        'AfriAddress is a full-stack address and mapping platform focused on African localisation, combining geospatial search, Plus Codes, offline-first workflows, multilingual support, secure authentication, and community-driven address verification in a scalable Docker-based architecture.',
+        'Full-stack address and mapping platform for African localisation, with geospatial search, Plus Codes, offline-first submissions, multilingual support, and community verification.',
       highlights: [
-        'Built the platform with .NET 8, Angular 17, PostgreSQL/PostGIS, Docker, and OSRM to support address creation, verification, discovery, geocoding, and routing workflows.',
-        'Implemented Plus Code support, offline-first place submission, multilingual localisation, JWT and passkey authentication, and community verification flows for more reliable local address data.',
-        'Designed for production readiness with containerized deployment, health monitoring, Prometheus and OpenTelemetry observability, and API-ready foundations for enterprise integrations.',
+        'Built address creation, verification, discovery, geocoding, and routing workflows with .NET, Angular, PostgreSQL/PostGIS, Docker, and OSRM.',
+        'Implemented Plus Code support, offline submissions, multilingual localisation, secure authentication, and verification flows.',
+        'Added health checks, observability foundations, and API-ready structures for future integrations.',
       ],
       stack: [
         '.NET 8',
@@ -205,11 +201,11 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'Carelink Telehealth Platform',
       kind: 'private-case-study',
       summary:
-        'Built and delivered a full-stack telehealth platform using .NET 8, Next.js, PostgreSQL, Docker, and Azure, with secure clinical workflows, automated CI/CD, observability, testing, and production deployment pipelines.',
+        'Full-stack telehealth platform built with .NET, Next.js, PostgreSQL, Docker, and Azure for secure clinical workflows and provider teams.',
       highlights: [
-        'Delivered end-to-end patient care workflows covering onboarding, appointments and sessions, EHR records, vitals, lab orders, prescriptions, referrals, provider analytics, wallet flows, notifications, and video consultations.',
-        'Designed the backend architecture with Minimal APIs and Carter, EF Core, PostgreSQL, JWT and Google OAuth authentication, background email services, and cloud storage integrations.',
-        'Containerized the stack with Docker Compose and added health checks, Serilog logging, Prometheus monitoring, smoke and integration tests, and CI/CD in GitHub Actions and Azure DevOps for Azure App Service deployment.',
+        'Built workflows for onboarding, appointments, EHR records, vitals, lab orders, prescriptions, referrals, analytics, notifications, and video consultations.',
+        'Designed backend services with .NET APIs, EF Core, PostgreSQL, JWT and Google OAuth authentication, background email, and cloud storage.',
+        'Added Docker Compose, health checks, structured logging, monitoring, tests, and CI/CD for Azure deployment.',
       ],
       stack: [
         '.NET 8',
@@ -229,11 +225,11 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'CSIR Strategic Plan Tracking Platform',
       kind: 'private-case-study',
       summary:
-        'A centralized platform for monitoring CSIR-Ghana strategic execution, designed to give decision-makers clearer operational visibility and structured reporting.',
+        'Centralized platform for monitoring CSIR-Ghana strategic plan execution and improving structured reporting for decision-makers.',
       highlights: [
-        'Defined system architecture and backend service boundaries for long-term maintainability.',
-        'Built API workflows and deployment paths aligned with institutional reporting needs.',
-        'Connected delivery, monitoring, and operational oversight into one coherent platform story.',
+        'Developed API and web workflows for tracking institutional objectives and progress.',
+        'Structured reporting views around CSIR planning and monitoring needs.',
+        'Supported maintainable architecture, deployment, and operational follow-up.',
       ],
       stack: ['C#', '.NET APIs', 'Azure', 'Monitoring'],
       imageSrc: 'images/csir-spme.png',
@@ -245,11 +241,11 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'BEST Forum Ghana Platform',
       kind: 'public-project',
       summary:
-        'Built the BEST Forum Ghana web platform for MEST as a full-stack public application supporting a national forum focused on environmental sustainability, scientific advancement, technological development, stakeholder engagement, and the showcasing of research and solutions.',
+        'Public web platform for BEST Forum Ghana, supporting a national forum on environmental sustainability, science, technology, and stakeholder engagement.',
       highlights: [
-        'Led major end-to-end application delivery across Next.js, a .NET API, a SQL database, and Azure cloud deployment for the live public platform.',
-        'Developed core platform capabilities that support forum visibility, stakeholder access, and the communication of BEST Forum goals around collaboration, innovation, and public engagement.',
-        'Set up automated deployment pipelines in Azure to improve release consistency, streamline delivery, and support reliable production updates.',
+        'Delivered core application work across Next.js, a .NET API, SQL database, and Azure hosting.',
+        'Built features that improve forum visibility, stakeholder access, and public communication.',
+        'Set up automated Azure deployment pipelines for more consistent production updates.',
       ],
       stack: [
         'Next.js',
@@ -271,11 +267,11 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'CICON Circular Concierge App',
       kind: 'public-project',
       summary:
-        'Contributed key product features to CICON, a circular concierge app that helps users manage digital wardrobes, understand garment impact, and access care, repair, rental, resale, donation, and recycling journeys through one mobile experience.',
+        'Contributed mobile features to CICON, a circular concierge app for digital wardrobes, garment impact, and care, repair, rental, resale, donation, and recycling journeys.',
       highlights: [
-        'Developed vital user-facing features for a live circular fashion product focused on wardrobe management, garment lifecycle visibility, and service discovery.',
-        'Worked on workflows aligned to care labels, material composition, price, and location so users could connect clothing items to relevant circular services more effectively.',
-        'Contributed to a product experience used alongside brand and partner integrations, including QR-led wardrobe journeys and circular concierge collaborations promoted by fashion partners.',
+        'Developed user-facing features for wardrobe management, garment lifecycle visibility, and service discovery.',
+        'Worked on flows using care labels, material composition, price, and location data.',
+        'Supported product features connected to partner integrations and QR-led wardrobe journeys.',
       ],
       stack: [
         'Mobile App',
@@ -293,18 +289,18 @@ export const portfolioProfile: PortfolioProfile = {
       secondaryCtaHref: '#contact',
     },
     {
-      title: 'Cloud-Native Delivery and Operations',
+      title: 'Containerized Release Work',
       kind: 'private-case-study',
       summary:
-        'A delivery and operations capability focused on secure, resilient application releases through containerization, CI/CD, and Kubernetes-based orchestration.',
+        'Practical deployment work using containers, CI/CD, and Kubernetes-oriented practices to make application releases more consistent.',
       highlights: [
-        'Standardized containerized workflows for more consistent deployments.',
-        'Applied Azure DevOps pipelines to improve release repeatability and team confidence.',
-        'Used Kubernetes-oriented deployment practices to support operational resilience.',
+        'Standardized Docker-based workflows for application environments.',
+        'Applied Azure DevOps pipelines to improve release repeatability.',
+        'Used Kubernetes-oriented practices where orchestration and resilience were needed.',
       ],
       stack: ['Docker', 'Kubernetes', 'Azure DevOps', 'Cloud Deployment'],
       imageSrc: '',
-      imageAlt: 'Placeholder media for cloud-native delivery case study',
+      imageAlt: 'Placeholder media for containerized release work case study',
       primaryCtaLabel: 'Case Study',
       primaryCtaHref: '#contact',
     },
@@ -312,11 +308,11 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'Selected GitHub Work',
       kind: 'public-profile',
       summary:
-        'A curated path to my public repositories, code experiments, and implementation work spanning application engineering, APIs, and platform-oriented development.',
+        'Public repositories and code samples covering application engineering, APIs, and platform-oriented development.',
       highlights: [
-        'Public-facing code samples for recruiters and technical reviewers.',
-        'Signals breadth across client applications, backend services, and delivery tooling.',
-        'Serves as the current public showcase until specific projects are promoted here individually.',
+        'Provides public code samples for recruiters and technical reviewers.',
+        'Shows breadth across client applications, backend services, and tooling.',
+        'Complements the private case studies shown in this portfolio.',
       ],
       stack: ['GitHub', '.NET', 'Cross-Platform Apps', 'Experiments'],
       imageSrc: '',
@@ -332,7 +328,7 @@ export const portfolioProfile: PortfolioProfile = {
       title: 'EFFECTIVENESS OF IMPLEMENTING MPLS VPN COMPUTER NETWORK FOR "BUSYINTERNET" ISP (GHANA)',
       status: "Master's Thesis",
       description:
-        'Master\'s thesis examining the implementation effectiveness of an MPLS VPN computer network for BusyInternet ISP in Ghana, with emphasis on network design, performance, and operational reliability.',
+        'Master\'s thesis on MPLS VPN implementation for BusyInternet ISP in Ghana, focused on network design, performance, and reliability.',
       tags: ['MPLS VPN', 'Computer Networks', 'ISP Infrastructure', "Master's Thesis"],
     },
     {
@@ -340,7 +336,7 @@ export const portfolioProfile: PortfolioProfile = {
         'Topic modelling of the "fix the country" protest in Ghana using the Latent Dirichlet Allocation (LDA) and Jaccard Similarity approach',
       status: 'Published Article | JASIT 2024',
       description:
-        'Published in the Journal of Applied Science and Information Technology (Vol. 1, No. 1, 2024), applying LDA and Jaccard Similarity to analyse discourse around the Fix the Country protest in Ghana.',
+        'Published article applying LDA and Jaccard Similarity to analyse discourse around the Fix the Country protest in Ghana.',
       tags: ['LDA', 'Jaccard Similarity', 'Topic Modelling', 'Social Media Analysis'],
       urlHref: 'https://csirjasit.org/index.php/journal/article/view/5',
       urlLabel: 'csirjasit.org article',

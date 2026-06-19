@@ -29,8 +29,7 @@
 .publication-card {
   padding: clamp(1.5rem, 3vw, 2rem);
   background:
-    linear-gradient(180deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.025)),
-    radial-gradient(circle at top right, rgb(72 104 255 / 0.16), transparent 34%),
+    linear-gradient(180deg, rgb(79 111 157 / 0.07), rgb(255 255 255 / 0) 42%),
     var(--color-surface-strong);
 }
 
@@ -45,7 +44,7 @@
 
 h3 {
   margin: 0;
-  font-size: clamp(1.45rem, 3vw, 1.95rem);
+  font-size: clamp(1.18rem, 2.5vw, 1.55rem);
 }
 
 .publication-card__description {

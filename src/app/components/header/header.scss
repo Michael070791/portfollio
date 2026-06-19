@@ -16,12 +16,10 @@
   align-content: start;
   gap: 0.8rem;
   padding: 1.5rem;
-  border-radius: 2rem;
-  background:
-    linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.02)),
-    linear-gradient(180deg, rgb(11 24 39 / 0.92), rgb(8 20 33 / 0.94));
-  border: 1px solid var(--active-section-border, rgb(255 255 255 / 0.08));
-  box-shadow: 0 1.5rem 3rem rgb(2 8 15 / 0.26);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 0.92);
+  border: 1px solid var(--active-section-border, var(--color-border));
+  box-shadow: var(--shadow-soft);
   transition:
     border-color 220ms ease,
     box-shadow 220ms ease,
@@ -29,16 +27,16 @@
 }
 
 .site-rail--scrolled .site-rail__sticky {
-  border-color: var(--active-section-border, rgb(233 122 81 / 0.15));
+  border-color: var(--active-section-border, rgb(183 95 58 / 0.15));
   box-shadow:
-    0 1.8rem 3.4rem rgb(2 8 15 / 0.32),
-    0 0 0 1px rgb(255 255 255 / 0.02),
-    0 0 2rem var(--active-section-soft, rgb(233 122 81 / 0.08));
+    var(--shadow-soft),
+    0 0 0 1px rgb(255 255 255 / 0.7),
+    0 0.9rem 1.8rem var(--active-section-soft, rgb(183 95 58 / 0.08));
 }
 
 .site-rail__brand {
   font-family: var(--font-heading);
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.22rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--color-text);
@@ -85,19 +83,19 @@
 .site-rail__ring {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgb(233 122 81 / 0.22);
+  border: 1px solid rgb(183 95 58 / 0.2);
 }
 
 .site-rail__ring--outer {
   inline-size: 10.9rem;
   aspect-ratio: 1;
-  background: radial-gradient(circle at 50% 50%, rgb(233 122 81 / 0.2), transparent 68%);
+  background: rgb(183 95 58 / 0.08);
 }
 
 .site-rail__ring--inner {
   inline-size: 8.2rem;
   aspect-ratio: 1;
-  background: radial-gradient(circle at 50% 50%, rgb(255 255 255 / 0.06), transparent 72%);
+  background: rgb(255 255 255 / 0.76);
 }
 
 .site-rail__portrait {
@@ -107,11 +105,9 @@
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgb(255 255 255 / 0.12), rgb(255 255 255 / 0.02)),
-    linear-gradient(145deg, rgb(18 39 62 / 0.95), rgb(9 20 35 / 0.95));
-  border: 1px solid rgb(255 255 255 / 0.12);
-  box-shadow: 0 1rem 2.4rem rgb(2 8 15 / 0.3);
+  background: #eef2f5;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0.8rem 1.8rem rgb(37 45 58 / 0.13);
 }
 
 .site-rail__portrait-image {
@@ -132,7 +128,7 @@
 
 .site-rail__monogram {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  font-size: clamp(2.2rem, 4vw, 3rem);
   letter-spacing: 0.12em;
 }
 
@@ -143,16 +139,16 @@
 }
 
 .site-rail__link {
-  --link-accent: #e97a51;
-  --link-soft: rgb(233 122 81 / 0.14);
-  --link-border: rgb(233 122 81 / 0.24);
+  --link-accent: #b75f3a;
+  --link-soft: rgb(183 95 58 / 0.11);
+  --link-border: rgb(183 95 58 / 0.2);
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 0.85rem;
   padding: 0.8rem 0.95rem;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   overflow: hidden;
   color: var(--color-muted);
   font-size: 0.95rem;
@@ -164,45 +160,45 @@
 }
 
 .site-rail__link[data-section='home'] {
-  --link-accent: #e97a51;
-  --link-soft: rgb(233 122 81 / 0.14);
-  --link-border: rgb(233 122 81 / 0.24);
+  --link-accent: #b75f3a;
+  --link-soft: rgb(183 95 58 / 0.11);
+  --link-border: rgb(183 95 58 / 0.2);
 }
 
 .site-rail__link[data-section='experience'] {
-  --link-accent: #4fa6ff;
-  --link-soft: rgb(79 166 255 / 0.14);
-  --link-border: rgb(79 166 255 / 0.24);
+  --link-accent: #2e6f9f;
+  --link-soft: rgb(46 111 159 / 0.1);
+  --link-border: rgb(46 111 159 / 0.18);
 }
 
 .site-rail__link[data-section='education'] {
-  --link-accent: #78a6ff;
-  --link-soft: rgb(120 166 255 / 0.14);
-  --link-border: rgb(120 166 255 / 0.24);
+  --link-accent: #4f6f9d;
+  --link-soft: rgb(79 111 157 / 0.1);
+  --link-border: rgb(79 111 157 / 0.18);
 }
 
 .site-rail__link[data-section='skills'] {
-  --link-accent: #33c7b6;
-  --link-soft: rgb(51 199 182 / 0.14);
-  --link-border: rgb(51 199 182 / 0.24);
+  --link-accent: #227c72;
+  --link-soft: rgb(34 124 114 / 0.1);
+  --link-border: rgb(34 124 114 / 0.18);
 }
 
 .site-rail__link[data-section='projects'] {
-  --link-accent: #f0b25c;
-  --link-soft: rgb(240 178 92 / 0.14);
-  --link-border: rgb(240 178 92 / 0.24);
+  --link-accent: #a66d22;
+  --link-soft: rgb(166 109 34 / 0.1);
+  --link-border: rgb(166 109 34 / 0.18);
 }
 
 .site-rail__link[data-section='publications'] {
-  --link-accent: #b18cff;
-  --link-soft: rgb(177 140 255 / 0.14);
-  --link-border: rgb(177 140 255 / 0.24);
+  --link-accent: #7657a9;
+  --link-soft: rgb(118 87 169 / 0.1);
+  --link-border: rgb(118 87 169 / 0.18);
 }
 
 .site-rail__link[data-section='contact'] {
-  --link-accent: #53c36f;
-  --link-soft: rgb(83 195 111 / 0.14);
-  --link-border: rgb(83 195 111 / 0.24);
+  --link-accent: #3d7d50;
+  --link-soft: rgb(61 125 80 / 0.1);
+  --link-border: rgb(61 125 80 / 0.18);
 }
 
 .site-rail__link::after {
@@ -210,7 +206,7 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(135deg, var(--link-soft), transparent 72%);
+  background: var(--link-soft);
   opacity: 0;
   transition: opacity 180ms ease;
   pointer-events: none;
@@ -223,8 +219,8 @@
   inline-size: 0.55rem;
   block-size: 0.55rem;
   border-radius: 50%;
-  background: rgb(255 255 255 / 0.2);
-  box-shadow: 0 0 0 4px rgb(7 19 31 / 1);
+  background: rgb(26 43 64 / 0.16);
+  box-shadow: 0 0 0 4px #ffffff;
   transition:
     background-color 180ms ease,
     transform 180ms ease;
@@ -233,7 +229,7 @@
 .site-rail__link:hover,
 .site-rail__link:focus-visible {
   color: var(--color-text);
-  background: rgb(255 255 255 / 0.04);
+  background: #f6f8fa;
   transform: translateX(2px);
 }
 
@@ -245,18 +241,18 @@
 
 .site-rail__link--active {
   color: var(--color-text);
-  background: rgb(255 255 255 / 0.05);
+  background: #f8fafc;
   box-shadow:
     inset 0 0 0 1px var(--link-border),
-    0 0.75rem 1.8rem rgb(2 8 15 / 0.18);
+    0 0.55rem 1.2rem rgb(37 45 58 / 0.08);
 }
 
 .site-rail__link--active::before {
   background: var(--link-accent);
   box-shadow:
-    0 0 0 4px rgb(7 19 31 / 1),
+    0 0 0 4px #ffffff,
     0 0 0 8px var(--link-soft),
-    0 0 1.1rem var(--link-soft);
+    0 0.3rem 0.9rem var(--link-soft);
   transform: scale(1.18);
 }
 
@@ -269,7 +265,7 @@
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgb(255 255 255 / 0.45);
+  color: rgb(26 43 64 / 0.42);
 }
 
 .site-rail__link-label {

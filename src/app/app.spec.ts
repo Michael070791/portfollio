@@ -21,7 +21,7 @@ describe('App', () => {
 
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Software Engineer Designing Research-Driven, Cloud-Native Systems',
+      'Software Engineer Building Practical, Reliable Systems',
     );
     expect(compiled.textContent).toContain('Alhassan Michael Araphat (MSc.)');
   });
@@ -81,8 +81,13 @@ describe('App', () => {
     await fixture.whenStable();
 
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain("Master's degree, Computer Engineering");
-    expect(compiled.textContent).toContain('Publication details coming soon');
+    expect(compiled.textContent).toContain(
+      'MSc. Computer Engineering, Major in Computer Systems and Networks',
+    );
+    expect(compiled.textContent).toContain(
+      'BSc. Computer Engineering, Major in Computer Systems and Networks',
+    );
+    expect(compiled.textContent).toContain('Published Article | JASIT 2024');
   });
 
   it('should render skill icons for the technology list', async () => {
