@@ -4,14 +4,19 @@
 
 .projects-list {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .project-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.85fr);
-  gap: 1rem;
+  gap: 0;
   align-items: stretch;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 0.9rem;
+  background: var(--color-surface-strong);
+  box-shadow: var(--shadow-soft);
 }
 
 .project-card--reverse {
@@ -29,6 +34,18 @@
 .project-card__content,
 .project-card__media {
   padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.project-card__content.card-surface,
+.project-card__media.card-surface {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.project-card__content {
+  align-self: stretch;
+  background: var(--color-surface-strong);
 }
 
 .project-card__eyebrow {
@@ -108,18 +125,23 @@ h3 {
 }
 
 .project-card__media {
+  position: relative;
   display: grid;
-  min-block-size: 0;
-  align-self: start;
-  aspect-ratio: 6 / 5;
+  min-block-size: 24rem;
+  align-self: stretch;
+  overflow: hidden;
+  background: #f1f4f7;
 }
 
 .project-card__image {
-  inline-size: 100%;
-  block-size: 100%;
+  position: absolute;
+  inset: 1.1rem;
+  inline-size: calc(100% - 2.2rem);
+  block-size: calc(100% - 2.2rem);
   border-radius: 0.7rem;
   object-fit: cover;
   object-position: center top;
+  box-shadow: inset 0 0 0 1px var(--color-border);
 }
 
 .project-card__placeholder {
@@ -164,7 +186,7 @@ h3 {
   }
 
   .project-card__media {
-    aspect-ratio: 16 / 10;
+    min-block-size: clamp(16rem, 58vw, 28rem);
   }
 
   .project-card--reverse .project-card__content,
@@ -189,6 +211,12 @@ h3 {
   }
 
   .project-card__media {
-    aspect-ratio: 4 / 3;
+    min-block-size: 15rem;
+  }
+
+  .project-card__image {
+    inset: 0.85rem;
+    inline-size: calc(100% - 1.7rem);
+    block-size: calc(100% - 1.7rem);
   }
 }

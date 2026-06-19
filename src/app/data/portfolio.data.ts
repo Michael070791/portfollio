@@ -12,10 +12,10 @@ export const portfolioProfile: PortfolioProfile = {
   experienceSummary:
     'I work across API design, web and mobile interfaces, research support, and deployment workflows. My strength is turning institutional and product goals into maintainable software that teams can use and improve.',
   heroFocusAreas: [
-    '.NET API engineering',
-    'React and client application development',
-    'Cross-platform mobile features',
-    'Research-informed software',
+    'Transforming ideas into dependable software platforms',
+    'Modern .NET APIs backed by clean engineering practices',
+    'React and mobile experiences that users can trust',
+    'DevOps workflows that make releases faster and safer',
   ],
   email: 'am.araphat@csir.org.gh',
   phone: '+233541319428',
